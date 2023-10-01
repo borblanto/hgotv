@@ -36,24 +36,10 @@ import data from './channels.json';
 			</defs>
 		</svg>
 		<h1>HVGO<span class="text-gradient">TV</span></h1>
-		 <p class="instructions">
-			Consultar la <a href="./schedule"><strong>agenda deportiva</strong></a>
+		<p class="instructions">
+			Consultar los <a href="../"><strong>canales de TV</strong></a>
 		</p>
-		<ul role="list" class="link-card-grid">
-			{data.map((emission) => {
-				const { channel, links, resolutions} = emission;
-				return links.map((link, index) => {
-					const resolution = resolutions[index] || 'HD';
-					return <Card
-						href={link}
-						title={channel}
-						body={'Resolución ' + resolution}
-					/>
-				})
-				
-			})}
-			
-		</ul>
+		<img src="https://api.microlink.io/?url=https%3A%2F%2Fwww.marca.com%2Fprogramacion-tv.html&element=.schedule&screenshot=true&embed=screenshot.url">
 	</main>
 </Layout>
 
@@ -67,6 +53,7 @@ import data from './channels.json';
 		font-size: 20px;
 		line-height: 1.6;
 	}
+	img { width: 100%;}
 	.astro-a {
 		position: absolute;
 		top: -32px;
