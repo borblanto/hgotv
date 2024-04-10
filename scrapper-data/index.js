@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio'); 
 const fs = require('fs'); 
  
-const targetURL = 'https://hackmd.io/@DEPORTES/AP-ID'; 
+const targetURL = 'https://hackmd.io/@67QuUe0VRy-nPCNoJwtsgQ/plan-d'; 
 
 const RESOLUTIONS = ['HD', '1080p', '720p'];  
 const getChannels = ($) => { 
